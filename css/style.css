@@ -5,7 +5,7 @@ body {
 }
 
 .layout_padding {
-  padding: 75px 0;
+  padding: 40px 0;
 }
 
 .layout_padding2 {
@@ -29,6 +29,7 @@ body {
 }
 
 .heading_container h2 {
+  margin: 30px auto;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -126,11 +127,12 @@ a:focus {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  padding: 15px 0;
 }
 
 .navbar-brand span {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
   color: #fefdfc;
   margin-left: 10px;
   text-transform: uppercase;
@@ -159,6 +161,7 @@ a:focus {
   background-position: center 55%;
 
   width: 90%;
+  padding: 100px 35px;
   margin: 0 auto;
   -webkit-transform: translateY(50px);
   transform: translateY(50px);
@@ -173,6 +176,8 @@ a:focus {
 
 .slider_section .detail-box {
   color: #fefdfc;
+  margin: 20 auto;
+  padding: 20 auto;
 }
 
 .slider_section .detail-box h1 {
@@ -229,7 +234,7 @@ a:focus {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  bottom: -75px;
+  bottom: -55px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -494,7 +499,7 @@ a:focus {
 }
 
 .info_section {
-  background-color: #252525;
+  background-color: #4f4c4c;
   color: #fefdfc;
   font-family: "Lato", sans-serif;
 }
@@ -502,6 +507,7 @@ a:focus {
 .info_section h5 {
   margin: 20px 0 25px 0;
   font-weight: 400;
+  color: #ecdb21;
   text-transform: uppercase;
 }
 
@@ -572,7 +578,13 @@ a:focus {
 }
 
 .footer_section a {
-  color: #fefdfc;
+  color: #e6e600;
+  font-weight: 500;
+}
+
+.footer_section a:hover {
+  color: #d4d400;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
