@@ -1315,7 +1315,7 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 14px;
+    padding: 8px 1px;
   }
 
   .navbar-brand {
@@ -1339,7 +1339,7 @@ a:focus {
   }
 
   .navbar-brand span {
-    font-size: 12px;
+    font-size: 18px;
     white-space: normal;
     line-height: 1.2;
   }
@@ -1513,7 +1513,9 @@ a:focus {
   }
 
   .navbar-brand span {
-    font-size: 14px;
+    font-size: 15px;
+    white-space: normal;
+    line-height: 1.2;
   }
 }
 
