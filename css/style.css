@@ -1280,6 +1280,18 @@ a:focus {
   text-decoration: underline;
 }
 
+.footer-links ul li a {
+  color: #ffffff;
+  /* font-size: 14px; */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ffff00;
+  text-decoration: underline;
+}
+
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
