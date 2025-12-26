@@ -66,6 +66,19 @@ body {
   margin: 0 auto;
 }
 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between logo and text */
+}
+
+.navbar-brand img {
+  height: 72px;          /* controls navbar height */
+  width: auto;
+  object-fit: contain;
+}
+
+
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
   padding: 10px 18px;
   color: #fefdfc;
@@ -120,23 +133,20 @@ a:focus {
   border: none;
 }
 
-.navbar-brand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  padding: 15px 0;
+.navbar {
+  padding: 12px 0;
+  align-items: center;
 }
 
+
 .navbar-brand span {
-  font-size: 24px;
-  font-weight: 400;
-  color: #fefdfc;
-  margin-left: 14px;
-  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.2;
+  white-space: nowrap;
 }
+
 
 .custom_nav-container {
   z-index: 99999;
@@ -296,7 +306,7 @@ a:focus {
   margin-top: 16px;
   margin-bottom: 8px;
   /* color: #654321; */
-  color: #5c6304; 
+  color: #5c6304;
 }
 
 .offer_section p {
@@ -328,7 +338,7 @@ a:focus {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-   margin-left: 0;
+  margin-left: 0;
   margin-right: 0;
 }
 
@@ -532,7 +542,8 @@ a:focus {
 
 
 .cta_strip {
-  background: #8f9b3a; /* olive green matching your theme */
+  background: #8f9b3a;
+  /* olive green matching your theme */
   padding: 60px 20px;
   text-align: center;
 }
@@ -765,7 +776,7 @@ a:focus {
   background: #fafafa;
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease;
 }
 
@@ -775,7 +786,7 @@ a:focus {
 
 .program-card img {
   width: 100%;
-  height: 200px;
+  height: auto;
   object-fit: cover;
 }
 
@@ -857,7 +868,8 @@ a:focus {
   right: 20px;
   width: 56px;
   height: 56px;
-  background: rgb(71, 177, 71); /* IMPORTANT */
+  background: rgb(71, 177, 71);
+  /* IMPORTANT */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -868,9 +880,243 @@ a:focus {
 
 .whatsapp-float img {
   width: 46px;
-  height: 46px; 
+  height: 46px;
 }
 
 .whatsapp-float:hover {
   transform: scale(1.08);
+}
+
+/* Responsive Styles for mobile navbar */
+/* =========================
+   MOBILE NAVBAR FIX
+   ========================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+  }
+}
+
+/* Hide brand text on very small screens */
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 14px;
+  }
+
+  .navbar-brand span {
+    font-size: 12px;
+    white-space: normal;
+    line-height: 1.2;
+  }
+}
+
+
+/* =========================
+   HERO SECTION MOBILE FIX
+   ========================= */
+
+@media (max-width: 768px) {
+  .slider_section {
+    background-position: 85% center;
+    position: relative;
+  }
+
+  /* Dark overlay for text readability */
+  .slider_section::before {
+    content: '';
+    position: absolute;
+    backdrop-filter: blur(2px);
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+
+  .slider_section .detail-box {
+    position: relative;
+    z-index: 2;
+  }
+
+  .slider_section h1 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .slider_section h1 span {
+    font-size: 22px;
+  }
+
+  .slider_section p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+/* =========================
+   OPTIONAL MOBILE POLISH
+   ========================= */
+
+/* Hide carousel dots on mobile */
+@media (max-width: 768px) {
+  .carousel-indicators {
+    display: none;
+  }
+}
+
+/* Center offer boxes on mobile */
+@media (max-width: 768px) {
+  .offer-box {
+    text-align: center;
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 14px auto;
+    background: #eef5c8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .offer-icon img,
+  .offer-icon svg {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer-box h5 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .offer-box p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer-box {
+    border: 1px solid #e6efb6;
+    border-radius: 14px;
+  }
+}
+.content-box {
+  background: #f6faef;
+  border: 1px solid #c6d87a;
+  border-radius: 14px;
+  padding: 22px 20px;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.content-box .img-box {
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+
+  border-radius: 50%;
+  background: #eef6c9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-box .img-box svg {
+  width: 40px;
+  height: 40px;
+  fill: #8a9b2f;
+}
+
+/* About Section Mobile Responsive Fix */
+@media (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
+
+  .about-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .about-content h2 {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .about-content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .about-btn {
+    margin: 20px auto 0;
+    display: inline-block;
+  }
+}
+
+/* Navbar Brand Resize on Mobile */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 50px;
+  }
+
+  .navbar-brand span {
+    font-size: 14px;
+  }
+}
+
+/* Footer logo styling */
+.footer-logo {
+  width: auto;
+  height: 104px;      /* slightly smaller than navbar */
+  object-fit: contain;
+  margin-bottom: none;
+}
+
+/* Footer logo wrapper */
+.info_logo a {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0px!important;
+}
+
+@media (max-width: 768px) {
+  .footer-logo {
+    height: 84px;
+    width: auto;
+  }
 }
