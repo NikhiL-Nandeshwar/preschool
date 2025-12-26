@@ -61,10 +61,10 @@
                 <li class="nav-item">
                   <a class="nav-link" href="program.html"> Programs </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                   <a class="nav-link" href="gallery.html"> Gallery </a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="contact.html"> Contact us</a>
                 </li>
               </ul>
@@ -76,75 +76,45 @@
     <!-- end header section -->
   </div>
 
-  <!-- contact section -->
 
-  <!-- CONTACT PAGE -->
-  <section class="contact-hero">
+  <!-- ABOUT PAGE -->
+  <section class="about-hero">
     <div class="container">
-      <h1>Get in Touch</h1>
-      <p>
-        We would love to welcome you to Mattern Roots Preschool.
-        Feel free to call, visit, or leave us a message.
-      </p>
+      <h1>Life at Mattern Roots</h1>
+      <p>Moments of learning, play, and joy from our preschool.</p>
     </div>
   </section>
 
-  <section class="contact-main">
-    <div class="container">
-      <div class="contact-grid">
+  <section class="gallery-page">
+    <section class="gallery-page">
+      <div class="gallery-section">
+        <h2>Classroom Environment</h2>
 
-        <!-- LEFT: Contact Info -->
-        <div class="contact-info">
-          <h2>Visit or Call Us</h2>
-
-          <p>
-            <strong>Address</strong><br>
-            10, Lambore Housing Society,<br>
-            Laxminarayan Nagar, Kadamwadi,<br>
-            Kolhapur, Maharashtra 416003
-          </p>
-
-          <p>
-            <strong>Phone</strong><br>
-            <a href="tel:+919309459772">+91 93094 59772</a>
-          </p>
-
-          <p>
-            <strong>Email</strong><br>
-            matternrootspreschool@gmail.com
-          </p>
-
-          <div class="contact-actions">
-            <a href="tel:+919309459772" class="btn-primary">Call Now</a>
-            <a href="https://wa.me/919309459772" class="btn-secondary" target="_blank">
-              WhatsApp Us
-            </a>
-          </div>
+        <div class="masonry">
+          <img src="images/class.png">
+          <img src="images/class.png">
+          <img src="images/class.png">
+          <img src="images/class.png">
+          <img src="images/class.png">
         </div>
-
-        <!-- RIGHT: Simple Form -->
-        <div class="contact-form">
-          <h2>Send Us a Message</h2>
-
-          <form>
-            <input type="text" placeholder="Parent's Name" required>
-            <input type="tel" placeholder="Mobile Number" required>
-            <textarea placeholder="Message (optional)"></textarea>
-            <button type="submit">Send Message</button>
-          </form>
-        </div>
-
       </div>
-    </div>
+
+      <div class="gallery-section">
+        <h2>Learning Through Play</h2>
+
+        <div class="masonry">
+          <img src="images/class.png">
+          <img src="images/class.png">
+          <img src="images/class.png">
+          <img src="images/class.png">
+        </div>
+      </div>
+
+    </section>
+
   </section>
 
-  <!-- MAP -->
-  <!-- <section class="contact-map">
-    <div id="map"></div>
-  </section> -->
-
-
-  <!-- info section -->
+  <!-- Footer info section -->
   <section class="info_section layout_padding">
     <div class="container">
       <div class="row">
@@ -227,25 +197,28 @@
   <script type="text/javascript" src="js/bootstrap.js"></script>
 
   <script>
+    // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+    // Australia.
     function initMap() {
-      const preschoolLocation = {
-        lat: 16.6990,
-        lng: 74.2317
-      };
-
-      const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 16,
-        center: preschoolLocation,
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 11,
+        center: {
+          lat: 40.645037,
+          lng: -73.880224
+        }
       });
 
-      new google.maps.Marker({
-        position: preschoolLocation,
+      var image = "images/maps-and-flags.png";
+      var beachMarker = new google.maps.Marker({
+        position: {
+          lat: 40.645037,
+          lng: -73.880224
+        },
         map: map,
-        title: "Mattern Roots Preschool",
+        icon: image
       });
     }
   </script>
-
   <!-- google map js -->
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
