@@ -629,10 +629,11 @@ a:focus {
 .about-wrapper {
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 50px 60px 50px 05px;
-}
+  gap: 5px;
+  padding: 60px 40px 60px 5px;
+  margin-right: 20px;
 
+}
 
 .about-text {
   max-width: 760px;
@@ -678,7 +679,7 @@ a:focus {
 
 .about-image img {
   width: 100%;
-  max-width: 570px;
+  max-width: 590px;
   border-radius: 12px;
   display: block;
   margin: 0 auto;
@@ -702,8 +703,9 @@ a:focus {
 
 
 .about-content {
-  max-width: 480px;
+  max-width: 620px;   /* was 480px */
 }
+
 
 .about-content h2 {
   font-size: 32px;
@@ -1662,8 +1664,11 @@ a:focus {
     padding: 30px 20px;
   }
 
-  .about-image img {
+   .about-image img {
     max-width: 100%;
+    height: auto;          /* key fix */
+    aspect-ratio: 4 / 3;   /* optional but improves look */
+    object-fit: cover;
   }
 
   .about-content {
@@ -1763,15 +1768,45 @@ a:focus {
 }
 
 .gallery-section {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .gallery-section h2 {
   font-size: 26px;
-  color: #5f6f05;
+  color: #3a4403;
   margin-bottom: 24px;
   text-align: center;
 }
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+.grid-gallery img {
+  width: 100%;
+  height: auto;          /* control height */
+  object-fit: cover;       /* crop, dont stretch */
+  border-radius: 14px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.grid-gallery img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 768px) {
+  .grid-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-gallery img {
+    height: 220px;
+  }
+}
+
 
 /* Masonry magic */
 .masonry {
