@@ -547,25 +547,7 @@ a:focus {
 }
 
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .about-hero-minimal h1 {
-    font-size: 28px;
-  }
 
-  .about-story-wrap {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .about-story {
-    padding: 60px 0;
-  }
-
-  .about-text p {
-    font-size: 15px;
-  }
-}
 
 
   .cta-buttons {
@@ -655,7 +637,7 @@ a:focus {
 }
 
 .about-story-wrap {
-  max-width: 95%;
+  max-width: 100%;
   margin: 0 auto;
   background: linear-gradient(
     135deg,
@@ -665,12 +647,14 @@ a:focus {
   );
   border: 1px solid #c4f620;
   border-radius: 14px;
-  padding: 60px;
+  padding: 30px;
   display: flex;
   gap: 60px;
   align-items: center;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
 }
+
+
 
 .about-image {
   flex: 1;
@@ -1575,10 +1559,24 @@ a:focus {
 
 /* Hide carousel dots on mobile */
 @media (max-width: 768px) {
-  .carousel-indicators {
-    display: none;
+  .slider_section ol.carousel-indicators {
+    bottom: -35px;          /* pull them closer */
+    justify-content: center;
+  }
+
+  .slider_section ol.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    background-color: #ffff00;
+  }
+
+  .slider_section ol.carousel-indicators li.active {
+    border: 2px solid #fff;
+    background-color: transparent;
   }
 }
+
 
 /* Center offer boxes on mobile */
 @media (max-width: 768px) {
@@ -1987,7 +1985,26 @@ a:focus {
   }
 }
 
+/* MOBILE */
+@media (max-width: 768px) {
+  .about-hero-minimal h1 {
+    font-size: 28px;
+  }
 
+  .about-story-wrap {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .about-story {
+    padding: 60px 0;
+  }
+
+  .about-text p {
+    font-size: 15px;
+  }
+}
 
 
 
