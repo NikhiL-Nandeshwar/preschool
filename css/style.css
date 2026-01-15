@@ -42,7 +42,7 @@ body {
 /*header section*/
 .hero_area {
   position: relative;
-  background-color: #78853f;
+  background-color: #829688;
   height: 85vh;
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 .header_section {
-  background-color: #90953b;
+  background-color: rgb(252, 255, 248);
 }
 
 .header_section .container-fluid {
@@ -84,7 +84,7 @@ body {
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
   padding: 10px 18px;
-  color: #fefdfc;
+  color: #11574b;
   text-align: center;
   text-transform: uppercase;
 }
@@ -99,7 +99,7 @@ body {
   width: 65%;
   left: 50%;
   height: 2.5px;
-  background-color: #ffff00;
+  background-color: #0d9881;
   bottom: 8px;
   margin: 0 auto;
   display: block;
@@ -145,7 +145,7 @@ a:focus {
 .navbar-brand span {
   font-size: 22px;
   font-weight: 600;
-  color: #ffffff;
+  color: #11574b;
   line-height: 1.2;
   white-space: nowrap;
 }
@@ -168,7 +168,7 @@ a:focus {
 /*end header section*/
 /* slider section */
 .slider_section {
-  background-image: url(../images/bg_2.png);
+  background-image: url(../images/School_images/111.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 55%;
@@ -194,20 +194,20 @@ a:focus {
 }
 
 .slider_section .detail-box h1 {
-  color: #ffff00;
+  color: #063418;
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 400;
 }
 
 .slider_section .detail-box span {
-  color: #fefdfc;
+  color: #1a6851;
   font-size: 3.5rem;
   font-weight: 500;
 }
 
 .slider_section .detail-box p {
-  color: #fefdfc;
+  color: #195a38;
   font-size: 18px;
   margin-top: 25px;
 }
@@ -223,28 +223,28 @@ a:focus {
 .slider_section .detail-box .btn-box .btn-1 {
   display: inline-block;
   padding: 12px 45px;
-  background-color: #ffff00;
-  color: #050505;
+  background-color: #11574b;
+  color: white;
   border-radius: 0;
   text-transform: uppercase;
   margin-right: 10px;
 }
 
 .slider_section .detail-box .btn-box .btn-1:hover {
-  background-color: #e6e600;
+  background-color: rgb(25, 79, 46);
 }
 
 .slider_section .detail-box .btn-box .btn-2 {
   display: inline-block;
   padding: 12px 42px;
-  background-color: #fefdfc;
-  color: #050505;
+  background-color: #d6e1d9;
+  color: #063418;
   border-radius: 0;
   text-transform: uppercase;
 }
 
 .slider_section .detail-box .btn-box .btn-2:hover {
-  background-color: #f8f0e9;
+  background-color: #cee4d3;
 }
 
 .slider_section ol.carousel-indicators {
@@ -262,13 +262,13 @@ a:focus {
   width: 20px;
   height: 20px;
   opacity: 1;
-  background-color: #ffff00;
+  background-color: #195a38;
   border-radius: 100%;
 }
 
 .slider_section ol.carousel-indicators li.active {
   background-color: transparent;
-  border: 3px solid #fefdfc;
+  border: 2px solid #195a38;
 }
 
 .offer_section {
@@ -551,8 +551,8 @@ a:focus {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 28px;
-  background: #e6e600;
-  color: #000;
+  background: #11574b;
+  color: white;
   font-weight: 500;
   text-decoration: none;
   border-radius: 4px;
@@ -959,7 +959,7 @@ a:focus {
 
 
 .cta_strip {
-  background: #8f9b3a;
+  background: #284741;
   /* olive green matching your theme */
   padding: 60px 20px;
   text-align: center;
