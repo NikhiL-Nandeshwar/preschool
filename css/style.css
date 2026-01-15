@@ -342,6 +342,47 @@ a:focus {
   background-color: #f7f7f7;
 }
 
+
+.about-philosophy {
+  background: #f7faf8; /* soft off-white green */
+  padding: 60px 0;
+}
+
+.about-philosophy h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #3d5f4f;
+  margin-bottom: 20px;
+}
+
+.about-philosophy p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  max-width: 1020px;
+}
+
+.about-standards {
+  padding: 70px 0;
+  background: #ffffff;
+}
+
+.about-standards h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #3d5f4f;
+  margin-bottom: 20px;
+}
+
+.about-standards p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  max-width: 1020px;
+}
+
+
+
 .philosophy-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -451,14 +492,12 @@ a:focus {
       #fff9d6 100%);
   border: 1px solid #c4f620;
   border-radius: 14px;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   gap: 60px;
   align-items: center;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
 }
-
-
 
 .about-image {
   flex: 1;
@@ -1436,7 +1475,6 @@ a:focus {
   }
 }
 
-
 .content-box {
   background: #f6faef;
   border: 1px solid #c6d87a;
@@ -1565,7 +1603,6 @@ a:focus {
   /* your yellow accent */
 }
 
-
 @media (max-width: 768px) {
   .footer-links {
     text-align: center;
@@ -1577,8 +1614,46 @@ a:focus {
   }
 }
 
-
 /*  GALLERY */
+.gallery-scroll {
+  overflow-x: auto;
+  padding-bottom: 12px;
+}
+
+.gallery-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.gallery-scroll::-webkit-scrollbar-thumb {
+  background: #cfd7b3;
+  border-radius: 10px;
+}
+
+.gallery-row {
+  display: flex;
+  gap: 32px;
+  width: max-content;
+}
+
+.gallery-row img {
+  flex: 0 0 32%;
+  max-width: 420px;
+  aspect-ratio: 3 / 2;
+
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* IMPORTANT */
+  border-radius: 16px;
+  background: #f1f3e6;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.gallery-row img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+
 .gallery-page {
   padding: 30px 30px;
   background: #f6f7f2;
@@ -1586,6 +1661,7 @@ a:focus {
 
 .gallery-section {
   margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .gallery-section h2 {
@@ -1604,9 +1680,7 @@ a:focus {
 .grid-gallery img {
   width: 100%;
   height: auto;
-  /* control height */
   object-fit: cover;
-  /* crop, dont stretch */
   border-radius: 14px;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
@@ -1625,7 +1699,6 @@ a:focus {
     height: 220px;
   }
 }
-
 
 /* Masonry magic */
 .masonry {
@@ -1716,7 +1789,6 @@ a:focus {
    background: #5f6f05;
   color: #fff;
 } */
-
 
 .btn-primary,
 .btn-secondary {
@@ -1912,9 +1984,6 @@ a:focus {
     padding: 14px;
   }
 
-  /* ===== CTA ===== */
-
-
   /* ABOUT HERO */
   .about-hero-minimal {
     background: #90953b;
@@ -1936,7 +2005,6 @@ a:focus {
     line-height: 1.35;
     font-weight: 500;
   }
-
 
   /* TRUST */
   .about-trust {
@@ -2042,8 +2110,88 @@ a:focus {
   }
 
   .gallery-page {
-  padding: 20px 20px;
-  background: #f6f7f2;
+    padding: 20px 20px;
+    background: #f6f7f2;
+  }
 }
 
+/* =========================
+   GALLERY - MOBILE FIX
+   ========================= */
+/* =========================
+   GALLERY HARD RESET - MOBILE
+   ========================= */
+@media (max-width: 768px) {
+
+  /* Kill any grid / masonry / column logic */
+  .gallery-page,
+  .gallery-section,
+  .gallery-scroll,
+  .gallery-row {
+    all: unset;
+    display: block;
+  }
+
+  .gallery-section {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .gallery-section h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 16px;
+    color: #3a4403;
+  }
+
+  /* Rebuild scroll container cleanly */
+  .gallery-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 16px;
+  }
+
+  /* Horizontal row */
+  .gallery-row {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  /* Images - NO CROPPING, NO BLUR */
+  .gallery-row img {
+    flex: 0 0 90%;
+    max-width: 90%;
+
+    width: 100%;
+    height: auto;
+    max-height: none;
+
+    object-fit: contain;
+    display: block;
+
+    border-radius: 14px;
+
+    filter: none;
+    backdrop-filter: none;
+    transform: none;
+  }
 }
+
+@media (max-width: 768px) {
+  .about-philosophy,
+  .about-standards {
+    padding: 50px 20px;
+  }
+
+  .about-philosophy h2,
+  .about-standards h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+
+
+
