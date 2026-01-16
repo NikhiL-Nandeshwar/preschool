@@ -560,7 +560,7 @@ a:focus {
 
 /* ABOUT HERO */
 .about-hero {
-  background: #78853f;
+  background-color: #829688;
   color: white;
   text-align: center;
   padding: 80px 20px;
@@ -959,7 +959,7 @@ a:focus {
 
 
 .cta_strip {
-  background: #284741;
+  background: #56645a;
   /* olive green matching your theme */
   padding: 60px 20px;
   text-align: center;
@@ -980,8 +980,9 @@ a:focus {
 
 .cta_strip .cta-btn {
   display: inline-block;
-  background: #ffff00;
-  color: #000;
+  background: white;
+  color: #124d27;
+  border: 2px solid #124d27;
   padding: 12px 28px;
   border-radius: 30px;
   text-decoration: none;
@@ -1231,7 +1232,7 @@ a:focus {
 }
 
 .program-cta {
-  background: #8f9b3a;
+  background: #56645a;
   padding: 50px 20px;
   text-align: center;
   color: #fff;
@@ -1261,17 +1262,19 @@ a:focus {
 .footer_section {
   /* background-color: #2c2727; */
   padding: 20px;
-  background-color: #7a772d;
+    background-color: rgb(230, 248, 217);
+    color: #829688
+;
 }
 
 .footer_section p {
   margin: 0;
   text-align: center;
-  color: #fefdfc;
+  color: #1a6851;
 }
 
 .footer_section a {
-  color: #e6e600;
+  color: #3cc99f;
   font-weight: 500;
 }
 
@@ -1801,13 +1804,13 @@ a:focus {
 }
 
 .btn-primary {
-  background: #5f6f05;
+  background: #1a6851;
   color: #fff;
 }
 
 .btn-secondary {
   background: #eef1d8;
-  color: #2f2f2f;
+  color: #1a4f36;
 }
 
 .btn-secondary:hover {
@@ -1839,7 +1842,7 @@ a:focus {
 .contact-form button {
   width: 100%;
   padding: 12px;
-  background: #5f6f05;
+  background: #2a6f5b;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -1847,7 +1850,7 @@ a:focus {
 }
 
 .contact-form button:hover {
-  background-color: #4b5804;
+  background-color: #25845e;
 }
 
 .contact-actions .btn-primary {
@@ -1855,7 +1858,7 @@ a:focus {
 }
 
 .contact-actions .btn-primary:hover {
-  background-color: #4b5804 !important;
+  background-color: #25845e !important;
 }
 
 /* Map */
