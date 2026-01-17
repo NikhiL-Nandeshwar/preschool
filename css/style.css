@@ -992,24 +992,25 @@ a:focus {
 }
 
 .cta_strip .cta-btn:hover {
-  background: #e3feee;
+  background: #cff8e0;
 }
 
 .cta_strip .cta-btn-outline {
   display: inline-block;
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  border: 2px solid #5dc53a;
+  color: #10533e;
+  background: rgb(124, 202, 124);
   padding: 10px 26px;
   border-radius: 30px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 8px;
   transition: all 0.3s ease;
 }
 
 .cta_strip .cta-btn-outline:hover {
-  background: #ffffff;
-  color: #000;
+  background: #69ee79;
+  color: #0f370c;
 }
 
 @media (max-width: 768px) {
@@ -1240,7 +1241,7 @@ a:focus {
 
 .program-cta h3 {
   font-size: 26px;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 .program-cta p {
@@ -1255,6 +1256,11 @@ a:focus {
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
+  margin-top: 20px;
+}
+
+.program-cta .cta-btn:hover {
+  background: #cff8e0;
 }
 
 
@@ -1408,7 +1414,6 @@ a:focus {
 /* Hide carousel dots on mobile */
 @media (max-width: 768px) {
   .slider_section ol.carousel-indicators {
-    bottom: -35px;
     /* pull them closer */
     justify-content: center;
   }
@@ -1804,7 +1809,7 @@ a:focus {
 }
 
 .btn-primary {
-  background: #1a6851;
+  background: #33a786;
   color: #fff;
 }
 
@@ -1842,7 +1847,7 @@ a:focus {
 .contact-form button {
   width: 100%;
   padding: 12px;
-  background: #2a6f5b;
+  background: #33a786;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -1850,7 +1855,7 @@ a:focus {
 }
 
 .contact-form button:hover {
-  background-color: #25845e;
+  background-color: #1fa36e;
 }
 
 .contact-actions .btn-primary {
@@ -2192,6 +2197,63 @@ a:focus {
     font-size: 1.6rem;
   }
 }
+
+@media (max-width: 768px) {
+  .slider_section .detail-box h1 {
+  color: #f8faf8;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.slider_section .detail-box span {
+  color: #c2f9e8;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.slider_section .detail-box p {
+  color: #eefff7;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.slider_section ol.carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  background-color: #c6f6dd;
+  border-radius: 100%;
+}
+
+.slider_section ol.carousel-indicators li.active {
+  background-color: transparent;
+  border: 2px solid #a2f2c9;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: #5f6f05;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.hamburger::before {
+  transform: translateY(-8px);
+}
+
+.hamburger::after {
+  transform: translateY(5px);
+}
+
+}
+
+
 
 
 
