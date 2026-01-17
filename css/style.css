@@ -559,6 +559,12 @@ a:focus {
   border-radius: 4px;
 }
 
+.about-btn:hover {
+  background: #0d463d;
+  color: #e8f5f2;
+  transform: translateY(-1px);
+}
+
 /* ABOUT HERO */
 .about-hero {
   background-color: #829688;
@@ -978,38 +984,46 @@ a:focus {
   margin-bottom: 28px;
 }
 
+/* CTA STRIP BUTTONS - CLEAN & MODERN */
+
 .cta_strip .cta-btn {
   display: inline-block;
-  background: white;
-  color: #124d27;
-  border: 2px solid #124d27;
-  padding: 12px 28px;
+  background: #228952; /* warm confident green */
+  color: #ffffff;
+  border: none;
+  padding: 13px 32px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
   margin: 0 8px;
-  transition: all 0.3s ease;
+  transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .cta_strip .cta-btn:hover {
-  background: #cff8e0;
+  background: #1b7849;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
+
+/* Secondary / Outline Button */
 
 .cta_strip .cta-btn-outline {
   display: inline-block;
-  border: 1px solid #5dc53a93;
-  color: #1f640893;
-  background: rgb(227, 247, 237);
-  padding: 10px 26px;
+  background: white;
+  color: #1f7a4a;
+  border: 2px solid #1f7a4a;
+  padding: 11px 30px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
   margin: 0 8px;
-  transition: all 0.3s ease;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
 
 .cta_strip .cta-btn-outline:hover {
-  background: rgb(193, 214, 203);
+  background: #e8f5ee;
+  color: #145c37;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
@@ -1249,18 +1263,25 @@ a:focus {
 }
 
 .program-cta .cta-btn {
-  background: white;
+  display: inline-block;
+  background: #ffffff;
   color: #1e5719;
-  padding: 12px 28px;
+  padding: 12px 30px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
   margin-top: 20px;
+  border: 2px solid #1e5719;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .program-cta .cta-btn:hover {
-  background: #cff8e0;
+  background: #e6f6ec;
+  color: #144012;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
+
 
 
 /* footer section*/
