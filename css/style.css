@@ -486,11 +486,12 @@ a:focus {
 .about-story-wrap {
   max-width: 100%;
   margin: 0 auto;
-  background: linear-gradient(135deg,
+  background: rgb(244, 252, 244);
+  /* background: linear-gradient(135deg,
       #f2f6e8 0%,
       #fbfde6 50%,
-      #fff9d6 100%);
-  border: 1px solid #c4f620;
+      #fff9d6 100%); */
+  border: 1px solid #20a136;
   border-radius: 14px;
   padding: 30px;
   display: flex;
@@ -762,7 +763,6 @@ a:focus {
 .cta-buttons a {
   border-radius: 30px;
 }
-
 
 .cta-primary {
   background: #ffff00;
@@ -1249,8 +1249,8 @@ a:focus {
 }
 
 .program-cta .cta-btn {
-  background: #ffff00;
-  color: #000;
+  background: white;
+  color: #1e5719;
   padding: 12px 28px;
   border-radius: 30px;
   text-decoration: none;
@@ -1274,12 +1274,12 @@ a:focus {
 }
 
 .footer_section a {
-  color: #3cc99f;
+  color: #55c27f;
   font-weight: 500;
 }
 
 .footer_section a:hover {
-  color: #d4d400;
+  color: #55d787;
   text-decoration: underline;
 }
 
@@ -1602,7 +1602,7 @@ a:focus {
 }
 
 .footer-links a:hover {
-  color: #ffff00;
+  color: #347b39;
   /* your yellow accent */
 }
 
