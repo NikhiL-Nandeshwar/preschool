@@ -997,9 +997,9 @@ a:focus {
 
 .cta_strip .cta-btn-outline {
   display: inline-block;
-  border: 2px solid #5dc53a;
-  color: #10533e;
-  background: rgb(124, 202, 124);
+  border: 1px solid #5dc53a93;
+  color: #1f640893;
+  background: rgb(227, 247, 237);
   padding: 10px 26px;
   border-radius: 30px;
   text-decoration: none;
@@ -1009,8 +1009,7 @@ a:focus {
 }
 
 .cta_strip .cta-btn-outline:hover {
-  background: #69ee79;
-  color: #0f370c;
+  background: rgb(193, 214, 203);
 }
 
 @media (max-width: 768px) {
@@ -1847,7 +1846,7 @@ a:focus {
 .contact-form button {
   width: 100%;
   padding: 12px;
-  background: #33a786;
+  background: #4a8967;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -1855,11 +1854,12 @@ a:focus {
 }
 
 .contact-form button:hover {
-  background-color: #1fa36e;
+  background-color: #25845e;
 }
 
 .contact-actions .btn-primary {
   color: #ffffff !important;
+  background: #4a8967;
 }
 
 .contact-actions .btn-primary:hover {
