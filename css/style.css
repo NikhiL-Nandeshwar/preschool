@@ -29,10 +29,32 @@ body {
 }
 
 .heading_container h2 {
+   text-align: center;
   margin: 70px auto 15px auto;
   text-transform: uppercase;
   font-weight: bold;
 }
+
+.section-brand {
+  text-align: center;
+  margin: 30px auto 50px;
+  max-width: 640px;
+}
+
+.section-brand img {
+  height: 120px;          /* not dominant */
+  width: auto;
+  opacity: 0.75;         /* subtle brand presence */
+  margin-bottom: 12px;
+}
+
+.section-brand p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #4a4a4a;
+  margin: 0;
+}
+
 
 
 .hero_next_section-margin {
@@ -318,7 +340,7 @@ a:focus {
 }
 
 .offer_section p {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.7;
   color: #555;
 }
@@ -507,11 +529,11 @@ a:focus {
 
 .about-image img {
   width: 100%;
-  max-width: 590px;
+  max-width: 600px;
   border-radius: 12px;
   display: block;
   margin: 0 auto;
-  height: 360px;
+  height: 400px;
 }
 
 .about-text {
@@ -975,7 +997,7 @@ a:focus {
   font-size: 28px;
   color: #ffffff;
   margin-bottom: 12px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .cta_strip p {
