@@ -29,7 +29,7 @@ body {
 }
 
 .heading_container h2 {
-   text-align: center;
+  text-align: center;
   margin: 70px auto 15px auto;
   text-transform: uppercase;
   font-weight: bold;
@@ -37,14 +37,15 @@ body {
 
 .section-brand {
   text-align: center;
-  margin: 30px auto 50px;
+  margin: 20px auto 50px;
   max-width: 640px;
 }
 
 .section-brand img {
-  height: 120px;          /* not dominant */
+  height: 130px;
+  /* not dominant */
   width: auto;
-  opacity: 0.75;         /* subtle brand presence */
+  /* subtle brand presence */
   margin-bottom: 12px;
 }
 
@@ -366,7 +367,8 @@ a:focus {
 
 
 .about-philosophy {
-  background: #f7faf8; /* soft off-white green */
+  background: #f7faf8;
+  /* soft off-white green */
   padding: 60px 0;
 }
 
@@ -551,6 +553,17 @@ a:focus {
   margin-bottom: 0;
 }
 
+.offer_section .content-box .card-logo {
+  position: absolute;
+  top: 14px;
+  right: 30px;
+  pointer-events: none;
+}
+
+.card-logo img {
+  height: 40px;
+  width: auto;
+}
 
 .about-content {
   max-width: 620px;
@@ -1010,7 +1023,8 @@ a:focus {
 
 .cta_strip .cta-btn {
   display: inline-block;
-  background: #228952; /* warm confident green */
+  background: #228952;
+  /* warm confident green */
   color: #ffffff;
   border: none;
   padding: 13px 32px;
@@ -1310,9 +1324,8 @@ a:focus {
 .footer_section {
   /* background-color: #2c2727; */
   padding: 20px;
-    background-color: rgb(230, 248, 217);
-    color: #829688
-;
+  background-color: rgb(230, 248, 217);
+  color: #829688;
 }
 
 .footer_section p {
@@ -1692,7 +1705,8 @@ a:focus {
 
   width: 100%;
   height: auto;
-  object-fit: contain; /* IMPORTANT */
+  object-fit: contain;
+  /* IMPORTANT */
   border-radius: 16px;
   background: #f1f3e6;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
@@ -2230,6 +2244,7 @@ a:focus {
 }
 
 @media (max-width: 768px) {
+
   .about-philosophy,
   .about-standards {
     padding: 50px 20px;
@@ -2243,63 +2258,78 @@ a:focus {
 
 @media (max-width: 768px) {
   .slider_section .detail-box h1 {
-  color: #f8faf8;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  font-weight: 400;
+    color: #f8faf8;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .slider_section .detail-box span {
+    color: #c2f9e8;
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+
+  .slider_section .detail-box p {
+    color: #eefff7;
+    font-size: 18px;
+    margin-top: 25px;
+  }
+
+  .slider_section ol.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    background-color: #c6f6dd;
+    border-radius: 100%;
+  }
+
+  .slider_section ol.carousel-indicators li.active {
+    background-color: transparent;
+    border: 2px solid #a2f2c9;
+  }
+
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: #5f6f05;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  .hamburger::before {
+    transform: translateY(-8px);
+  }
+
+  .hamburger::after {
+    transform: translateY(5px);
+  }
+
+  .card-logo {
+    top: 10px;
+    right: 30px;
+  }
+
+  .card-logo img {
+    height: 40px;
+  }
 }
 
-.slider_section .detail-box span {
-  color: #c2f9e8;
-  font-size: 3.5rem;
-  font-weight: 500;
+@media (max-width: 768px) {
+  .section-brand {
+    margin: 20px auto 35px;
+    padding: 0 16px;
+  }
+
+  .section-brand img {
+    height: 48px;
+  }
+
+  .section-brand p {
+    font-size: 15px;
+  }
 }
-
-.slider_section .detail-box p {
-  color: #eefff7;
-  font-size: 18px;
-  margin-top: 25px;
-}
-
-.slider_section ol.carousel-indicators li {
-  width: 20px;
-  height: 20px;
-  opacity: 1;
-  background-color: #c6f6dd;
-  border-radius: 100%;
-}
-
-.slider_section ol.carousel-indicators li.active {
-  background-color: transparent;
-  border: 2px solid #a2f2c9;
-}
-
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-  content: "";
-  display: block;
-  width: 26px;
-  height: 3px;
-  background: #5f6f05;
-  border-radius: 2px;
-  transition: 0.3s;
-}
-
-.hamburger::before {
-  transform: translateY(-8px);
-}
-
-.hamburger::after {
-  transform: translateY(5px);
-}
-
-}
-
-
-
-
-
-
-
-
