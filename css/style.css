@@ -1070,7 +1070,7 @@ a:focus {
 
 .program-content .age {
   font-size: 15px;
-  color: #a0b40a;
+   color: var(--purple-600);
   font-weight: bold;
   font-style: italic;
   display: block;
