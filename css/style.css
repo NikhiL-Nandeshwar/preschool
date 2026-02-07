@@ -295,7 +295,7 @@ a:focus {
 }
 
 .offer_section {
-  background: #f7f8f2;
+  background: white;
   /* soft olive/off-white */
 }
 
@@ -362,7 +362,7 @@ a:focus {
 }
 
 .about_section {
-  background-color: #f7f7f7;
+  background-color: white;
 }
 
 
@@ -603,6 +603,7 @@ a:focus {
 /* ABOUT HERO */
 .about-hero {
   background-color: #829688;
+  /* background-color: #DAB1DA; */
   color: white;
   text-align: center;
   padding: 80px 20px;
@@ -1252,34 +1253,40 @@ a:focus {
   transform: translateY(-6px);
 }
 
-.program-card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
+  .program-card img {
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin: 20px auto 0;
+    object-fit: contain;
+  }
 
 .program-content {
   padding: 22px;
 }
 
-.program-content h3 {
-  font-size: 22px;
-  margin-bottom: 4px;
-}
+  .program-content h3 {
+    font-size: 22px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  
+  .program-content .age {
+    font-size: 15px;
+    color: #a0b40a;
+    font-weight: bold;
+    font-style: italic;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+  }
 
-.program-content .age {
-  font-size: 15px;
-  color: #a0b40a;
-  font-weight: bold;
-  font-style: italic;
-}
-
-.program-content p {
-  font-size: 16px;
-  color: #555;
-  margin-top: 12px;
-  line-height: 1.6;
-}
+  .program-content p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 8px;
+    line-height: 1.6;
+  }
 
 .program-cta {
   background: #56645a;
