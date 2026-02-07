@@ -1240,6 +1240,11 @@ a:focus {
     z-index: 1;
   }
 
+  .slider_section.no-overlay::before {
+    background: rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(1.5px);
+  }
+
   .slider_section .detail-box {
     position: relative;
     z-index: 2;
@@ -2086,7 +2091,7 @@ a:focus {
     display: block;
     width: 26px;
     height: 3px;
-    background: #5f6f05;
+    background: var(--purple-700);
     border-radius: 2px;
     transition: 0.3s;
   }
