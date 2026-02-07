@@ -5,7 +5,7 @@ body {
 }
 
 .layout_padding {
-  padding: 40px 0;
+  padding: 50px 0;
 }
 
 .heading_container h2 {
@@ -167,7 +167,7 @@ a:focus {
   border-radius: 18px;
 
   width: 90%;
-  padding: 80px 10px;
+  padding: 60px 10px;
   margin: 0 auto;
   -webkit-transform: translateY(50px);
   transform: translateY(50px);
@@ -283,10 +283,9 @@ a:focus {
   /* soft olive/off-white */
 }
 
-
 .offer_section .content-box {
   background: #f2f7ef;
-  border: 1px solid #a5c72b;
+  /* border: 1px solid #a5c72b; */
   border-radius: 12px;
   padding: 24px;
   margin-bottom: 30px;
@@ -559,7 +558,7 @@ a:focus {
 /* Content should sit above overlay */
 
 
-  /* content: '✓'; */
+/* content: '✓'; */
 
 /* HIGHLIGHT SECTION */
 .about-block.highlight {
@@ -1070,7 +1069,7 @@ a:focus {
 
 .program-content .age {
   font-size: 15px;
-   color: var(--purple-600);
+  color: var(--purple-600);
   font-weight: bold;
   font-style: italic;
   display: block;
@@ -1241,8 +1240,8 @@ a:focus {
   }
 
   .slider_section.no-overlay::before {
-    background: rgba(0, 0, 0, 0.01);
-    backdrop-filter: blur(1.5px);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(9px);
   }
 
   .slider_section .detail-box {
@@ -2052,6 +2051,17 @@ a:focus {
 }
 
 @media (max-width: 768px) {
+  .layout_padding {
+    padding: 20px 0;
+  }
+
+  .heading_container h2 {
+    text-align: center;
+    margin: 20px auto 15px auto;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
   .slider_section .detail-box h1 {
     color: #f8faf8;
     font-size: 1.8rem;
