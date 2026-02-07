@@ -1997,7 +1997,7 @@ a:focus {
     text-align: center;
     font-size: 22px;
     margin-bottom: 16px;
-    color: #3a4403;
+    color: #353935;
   }
 
   /* Rebuild scroll container cleanly */
@@ -2055,8 +2055,9 @@ a:focus {
   .heading_container h2 {
     text-align: center;
     margin: 20px auto 15px auto;
-    text-transform: uppercase;
     font-weight: bold;
+    font-weight: 500;
+    font-size: 23px;
   }
 
   .slider_section .detail-box h1 {
