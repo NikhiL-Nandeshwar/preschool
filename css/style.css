@@ -5,7 +5,7 @@ body {
 }
 
 .layout_padding {
-  padding: 50px 0;
+  padding: 20px 0;
 }
 
 .heading_container h2 {
@@ -38,24 +38,27 @@ body {
 }
 
 .hero_next_section-margin {
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 /*header section*/
 .hero_area {
   position: relative;
   background-color: var(--purple-300);
-  height: 85vh;
+  min-height: auto;
+  height: auto;
+  padding-bottom: 24px;
 }
 
 .sub_page .hero_area {
   height: auto;
+  padding-bottom: 0;
+  background-color: transparent;
 }
 
 .hero_area.sub_pages {
   height: auto;
 }
-
 
 .header_section .container-fluid {
   padding-right: 25px;
@@ -168,23 +171,35 @@ a:focus {
   border-radius: 18px;
 
   width: 90%;
-  padding: 60px 10px;
-  margin: 0 auto;
-  -webkit-transform: translateY(50px);
-  transform: translateY(50px);
-  height: 100%;
+  padding: 12px 34px 12px;
+  margin: 20px auto 0;
+  -webkit-transform: none;
+  transform: none;
+  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 580px;
 }
 
 .slider_section .detail-box {
   color: #fefdfc;
-  margin: 20 auto;
-  padding: 20 auto;
+  margin: 0;
+  padding: 0 0 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.slider_section #carouselExampleIndicators {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider_section #carouselExampleIndicators .carousel-inner {
+  order: 1;
 }
 
 .slider_section .detail-box .hero-kicker {
@@ -226,6 +241,9 @@ a:focus {
 
 .slider_section .detail-box .btn-box {
   margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 16px;
 }
 
 .slider_section .detail-box .btn-box .btn-1 {
@@ -235,7 +253,11 @@ a:focus {
   color: white;
   border-radius: 0;
   text-transform: uppercase;
-  margin-right: 10px;
+  margin-right: 0;
+  min-width: 200px;
+  max-width: 260px;
+  text-align: center;
+  flex: 1 1 200px;
 }
 
 .slider_section .detail-box .btn-box .btn-1:hover {
@@ -249,6 +271,10 @@ a:focus {
   color: #063418;
   border-radius: 0;
   text-transform: uppercase;
+  min-width: 200px;
+  max-width: 260px;
+  text-align: center;
+  flex: 1 1 200px;
 }
 
 .slider_section .detail-box .btn-box .btn-2:hover {
@@ -256,14 +282,17 @@ a:focus {
 }
 
 .slider_section ol.carousel-indicators {
-  margin: 0;
+  margin: 28px 0 0;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  bottom: -55px;
+  position: static;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-padding-start: 0;
+  padding-left: 0;
+  order: 2;
 }
 
 .slider_section ol.carousel-indicators li {
@@ -430,9 +459,9 @@ a:focus {
 .about-wrapper {
   display: flex;
   align-items: center;
-  gap: 5px;
-  padding: 60px 40px 60px 5px;
-  margin-right: 20px;
+  gap: 52px;
+  padding: 70px 50px;
+  margin-right: 0;
 
 }
 
@@ -517,6 +546,7 @@ a:focus {
 .about-content {
   max-width: 620px;
   /* was 480px */
+  padding-left: 8px;
 }
 
 .about-content h2 {
