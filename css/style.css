@@ -2173,6 +2173,7 @@ a:focus {
   .about-philosophy,
   .about-standards {
     padding: 50px 30px;
+    margin: 0px 15px;
   }
 
   .about-philosophy h2,
@@ -2506,7 +2507,7 @@ body {
 
 /* About Page Refresh */
 .about_page .about-story {
-  background: linear-gradient(180deg, #f9f7ff 0%, #f7f4ff 100%);
+/* background: linear-gradient(180deg, #f9f7ff 0%, #f7f4ff 100%); */
   padding: 64px 0;
 }
 
@@ -2541,7 +2542,7 @@ body {
 
 .about_page .about-philosophy,
 .about_page .about-standards {
-  background: linear-gradient(180deg, #f8f5ff 0%, #f6f2ff 100%);
+  /* background: linear-gradient(180deg, #f8f5ff 0%, #f6f2ff 100%); */
   padding: 0 0 36px;
 }
 
@@ -2595,7 +2596,7 @@ body {
   width: 120px;
   height: 120px;
   margin-top: 26px;
-  padding: 16px;
+  padding: 5px;
   border-radius: 24px;
   background: linear-gradient(145deg, #ffffff 0%, #f2ecff 100%);
   border: 1px solid #e3d8fb;
