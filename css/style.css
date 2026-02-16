@@ -280,7 +280,8 @@ a:focus {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 14px;
+  margin-left: 56px;
+  padding: 8px 28px;
   border-radius: 999px;
   border: 1px solid var(--purple-300);
   background: var(--purple-100);
