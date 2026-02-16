@@ -1477,7 +1477,13 @@ a:focus {
   }
 
   .slider_section .image-only-slide .image-only-badge {
-    display: none;
+    display: inline-flex;
+    padding: 6px 10px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-left: 6px;
+    position: relative;
+    z-index: 2;
   }
 
   .slider_section .image-only-slide img {
