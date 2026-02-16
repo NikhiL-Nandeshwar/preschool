@@ -78,7 +78,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 769px) {
   .slider_section {
     min-height: 520px;
   }

@@ -201,6 +201,8 @@ a:focus {
   background-position: center 55%;
   border: 1px solid var(--purple-300);
   border-radius: 18px;
+  position: relative;
+  overflow: hidden;
 
   width: 90%;
   padding: 12px 34px 12px;
@@ -215,6 +217,31 @@ a:focus {
   -ms-flex-align: center;
   align-items: center;
   min-height: 580px;
+}
+
+.slider_section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(../images/School_images/image_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 55%;
+  filter: blur(16px);
+  transform: scale(1.04);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.slider_section.first-image-slide-active::after {
+  opacity: 1;
+}
+
+.slider_section>.container {
+  position: relative;
+  z-index: 1;
 }
 
 .slider_section .detail-box {
@@ -232,6 +259,45 @@ a:focus {
 
 .slider_section #carouselExampleIndicators .carousel-inner {
   order: 1;
+}
+
+.slider_section .image-only-slide {
+  min-height: 300px;
+}
+
+.slider_section .image-only-slide .image-only-wrap {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 18px;
+  padding: 34px 30px 20px;
+  position: relative;
+}
+
+.slider_section .image-only-slide .image-only-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--purple-300);
+  background: var(--purple-100);
+
+  color: var(--purple-800);
+  font-size: 12px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.slider_section .image-only-slide img {
+  width: 100%;
+  max-height: 540px;
+  object-fit: contain;
+  border-radius: 12px;
 }
 
 .slider_section .detail-box .hero-kicker {
@@ -1307,6 +1373,10 @@ a:focus {
     backdrop-filter: blur(9px);
   }
 
+  .slider_section.first-image-slide-active::before {
+    content: none;
+  }
+
   .slider_section .detail-box {
     position: relative;
     z-index: 2;
@@ -1344,6 +1414,73 @@ a:focus {
   .slider_section ol.carousel-indicators li.active {
     border: 2px solid #fff;
     background-color: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider_section {
+    min-height: auto;
+    padding: 10px 12px 18px;
+  }
+
+  .slider_section #carouselExampleIndicators,
+  .slider_section #carouselExampleIndicators .carousel-inner,
+  .slider_section .image-only-slide,
+  .slider_section .image-only-slide .image-only-wrap {
+    width: 100%;
+  }
+
+  .slider_section .image-only-slide,
+  .slider_section .image-only-slide .image-only-wrap {
+    min-height: 0;
+  }
+
+  .slider_section .image-only-slide .image-only-wrap {
+    min-height: clamp(230px, 58vw, 360px);
+    padding: 26px 0 0;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .slider_section .image-only-slide .image-only-wrap::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../images/School_images/Page1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(18px);
+    transform: scale(1.06);
+    opacity: 0.72;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .slider_section .image-only-slide .image-only-badge {
+    padding: 7px 12px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 2;
+    background: var(--purple-100);
+  }
+
+  .slider_section .image-only-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: calc(100% - 44px);
+    object-fit: contain;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .slider_section ol.carousel-indicators {
+    margin-top: 14px;
   }
 }
 
@@ -2507,7 +2644,7 @@ body {
 
 /* About Page Refresh */
 .about_page .about-story {
-/* background: linear-gradient(180deg, #f9f7ff 0%, #f7f4ff 100%); */
+  /* background: linear-gradient(180deg, #f9f7ff 0%, #f7f4ff 100%); */
   padding: 64px 0;
 }
 
