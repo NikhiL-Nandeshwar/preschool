@@ -1377,6 +1377,15 @@ a:focus {
     content: none;
   }
 
+  .slider_section.first-image-slide-active {
+    background-image: none;
+  }
+
+  .slider_section.first-image-slide-active::after {
+    content: none;
+    opacity: 0;
+  }
+
   .slider_section .detail-box {
     position: relative;
     z-index: 2;
@@ -1420,7 +1429,25 @@ a:focus {
 @media (max-width: 768px) {
   .slider_section {
     min-height: auto;
-    padding: 10px 12px 18px;
+    padding: 6px 8px 14px;
+  }
+
+  .slider_section.first-image-slide-active {
+    background: #ffffff;
+  }
+
+  .slider_section > .container {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .slider_section.first-image-slide-active {
+    padding: 4px 6px 8px;
+  }
+
+  .slider_section.first-image-slide-active > .container {
+    padding-left: 2px;
+    padding-right: 2px;
   }
 
   .slider_section #carouselExampleIndicators,
@@ -1436,8 +1463,8 @@ a:focus {
   }
 
   .slider_section .image-only-slide .image-only-wrap {
-    min-height: clamp(230px, 58vw, 360px);
-    padding: 26px 0 0;
+    min-height: auto;
+    padding: 10px 8px 2px;
     gap: 10px;
     position: relative;
     overflow: hidden;
@@ -1445,34 +1472,18 @@ a:focus {
   }
 
   .slider_section .image-only-slide .image-only-wrap::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url(../images/School_images/Page1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    filter: blur(18px);
-    transform: scale(1.06);
-    opacity: 0.72;
-    z-index: 0;
-    pointer-events: none;
+    content: none;
   }
 
   .slider_section .image-only-slide .image-only-badge {
-    padding: 7px 12px;
-    font-size: 10px;
-    letter-spacing: 1px;
-    position: relative;
-    z-index: 2;
-    background: var(--purple-100);
+    display: none;
   }
 
   .slider_section .image-only-slide img {
     display: block;
     width: 100%;
     height: auto;
-    max-height: calc(100% - 44px);
+    max-height: none;
     object-fit: contain;
     border-radius: 10px;
     position: relative;
@@ -1480,7 +1491,11 @@ a:focus {
   }
 
   .slider_section ol.carousel-indicators {
-    margin-top: 14px;
+    margin-top: 10px;
+  }
+
+  .slider_section.first-image-slide-active ol.carousel-indicators {
+    margin-top: 4px;
   }
 }
 
