@@ -16,6 +16,8 @@
 
   <title>Matern Roots Preschool</title>
 
+  <link rel="icon" type="image/x-icon" href="images/MRPS_.ico">
+
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
@@ -767,22 +769,22 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear()
 
-    ;(function () {
-      var $carousel = $('#carouselExampleIndicators')
-      var $slider = $('.slider_section')
-      if (!$carousel.length || !$slider.length) return
+      ; (function () {
+        var $carousel = $('#carouselExampleIndicators')
+        var $slider = $('.slider_section')
+        if (!$carousel.length || !$slider.length) return
 
-      function syncFirstImageSlide() {
-        var activeIndex = $carousel.find('.carousel-item.active').index()
-        $slider.toggleClass('first-image-slide-active', activeIndex === 0)
-      }
+        function syncFirstImageSlide() {
+          var activeIndex = $carousel.find('.carousel-item.active').index()
+          $slider.toggleClass('first-image-slide-active', activeIndex === 0)
+        }
 
-      $carousel.on('slide.bs.carousel', function (e) {
-        $slider.toggleClass('first-image-slide-active', e.to === 0)
-      })
-      $carousel.on('slid.bs.carousel', syncFirstImageSlide)
-      syncFirstImageSlide()
-    })()
+        $carousel.on('slide.bs.carousel', function (e) {
+          $slider.toggleClass('first-image-slide-active', e.to === 0)
+        })
+        $carousel.on('slid.bs.carousel', syncFirstImageSlide)
+        syncFirstImageSlide()
+      })()
   </script>
   <a href="https://wa.me/919309459772" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
     <img src="images/wp.svg" alt="WhatsApp widget">
@@ -790,4 +792,3 @@
 </body>
 
 </html>
-
